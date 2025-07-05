@@ -31,7 +31,7 @@ class UI_AboutWindow(QtWidgets.QDialog):
         copy_label.setAlignment(QtCore.Qt.AlignCenter)
 
         rights_label = QtWidgets.QLabel(self)
-        rights_label.setText("All rights reserved")
+        rights_label.setText("Licensed under GPL v3.0")
         rights_label.setAlignment(QtCore.Qt.AlignCenter)
 
         # mech_label = QtWidgets.QLabel(self)
@@ -57,10 +57,3 @@ class UI_AboutWindow(QtWidgets.QDialog):
     def call_link(self, event):
         QtGui.QDesktopServices.openUrl(QtCore.QUrl("https://github.com/adalfarus/unicode-writer"))
         self.app_label.setStyleSheet("color: #464cb1; text-decoration: underline;")
-
-# Example usage
-if not 1 == 1:
-    app = QtWidgets.QApplication([])
-    window = UI_AboutWindow(None)
-    window.show()
-    app.exec_()
